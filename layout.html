@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test layout</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<script src="./js/RTCMultiConnection.js"></script>-->
+    <script src="./js/RTCMultiConnection.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/ga.js"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    
+    <!-- <script src="http://www.google-analytics.com/ga.js"></script> -->
+    <!--<script src="http://cdn.webrtc-experiment.com/RTCMultiConnection.js"></script>-->
+    <!--<script src="http://cdn.webrtc-experiment.com/firebase.js"></script>-->
+    <!--<link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 700px)" />-->
+  </head>
+  <body>	
+    <div id="container">
+  		<button id="open-room" style="position: fixed; left: 40%; z-index: 100000;">Open Room</button>
+  		<div id="local" style="z-index: 999;">
+        <video id="localVideo" muted></video>
+      </div>
+  	  <div id="remotes">
+          <div class="remoteV">
+            <video id="remoteVideo" autoplay muted>
+              <source type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'></source>
+            </video>
+          </div>
+          <div id="mini">
+            <video id="miniVideo" muted></video>
+          </div>
+  	  </div>
+      <div id="fullscreen">
+        <video id="fullVideo" muted></video>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
